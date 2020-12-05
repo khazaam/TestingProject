@@ -4,7 +4,7 @@
   "description": "[![Coverage Status](https://coveralls.io/repos/github/khazaam/TestingProject/badge.svg?branch=master)](https://coveralls.io/github/khazaam/TestingProject?branch=master)",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test",
+    "test": "mocha test --exit",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=lcov"
   },

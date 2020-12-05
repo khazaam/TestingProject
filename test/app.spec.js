@@ -1,15 +1,9 @@
-//This is a test file, see the other colour
-
-// You can other test files to src and trought there you could 
-//add more tests. But you will nee to modify either this file 
-//or include everything into a singular file
-
-//This contain unit testing.
 const assert = require('assert');
 const { expect } = require('chai');
 //add paths here for tests
-const { add } = require('../src/app'); //Unit testing, you could add other test same way
-const { sub } = require('../src/app')
+
+const { add } = require('../src/add');///rikki
+
 
 describe('this is the add function', () => {
     it('lets add two numbers together', () => {

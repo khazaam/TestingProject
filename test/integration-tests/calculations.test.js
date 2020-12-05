@@ -12,5 +12,12 @@ describe('Tests library used with different calculations', () => {
         const result = divide(add(1,2), 3);
         expect(result).to.equal(1);
     });
+
+    it('1 / 4 + 4', () => {
+        const divideResult = divide(1,4);
+        expect(divideResult).to.equal(0.25);
+        const result = add(divideResult, 4);
+        expect(result).to.equal(4.25);
+    });
 });
 

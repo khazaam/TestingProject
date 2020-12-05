@@ -18,7 +18,11 @@ describe('Tests library used with different calculations', () => {
         expect(result).to.equal(1);
     });
 
-
+    // This fails because divide returns 1
+    it.skip('1 / 4 + 4', () => {
+        const result = add(divide(1,4), 4);
+        expect(result).to.equal(4.25);
+    });
 
 });
 

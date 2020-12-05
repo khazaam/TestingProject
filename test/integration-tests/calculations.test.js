@@ -1,4 +1,3 @@
-import assert from 'assert';
 import chai from 'chai';
 var expect = chai.expect;
 

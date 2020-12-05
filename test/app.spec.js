@@ -4,7 +4,7 @@
 //add more tests. But you will nee to modify either this file 
 //or include everything into a singular file
 
-//This contain unit testing
+//This contain unit testing.
 const assert = require('assert');
 const { expect } = require('chai');
 //add paths here for tests

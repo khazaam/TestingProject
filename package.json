@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
-    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +15,8 @@
     "mocha": "^8.2.1"
   },
   "dependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "nyc": "^15.1.0"
   },
   "directories": {
     "test": "test"

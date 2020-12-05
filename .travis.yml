@@ -3,7 +3,7 @@ sudo: false
 language: node_js
 
 node_js:
- - "node"
+ - "v10.15.0"
 
 script:
   - npm run coveralls

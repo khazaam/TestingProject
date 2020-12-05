@@ -1,5 +1,7 @@
 language: node_js
 node_js:
-- 12
+ - 12
 script:
-- npm run coveralls
+ - npm test
+after_success:
+  npm run coveralls

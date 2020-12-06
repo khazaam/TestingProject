@@ -10,7 +10,6 @@ describe('Testing function filter', () => {
     ];
     it('Should return correct filtered user', () => {
         const result = filter(users, ({ active }) => active);
-        console.log(result);
         expect(result).to.eql([{ 'user': 'barney', 'active': true }]);
     });
 });

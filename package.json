@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test --recursive test/ --timeout 10000",
-    "coverage": "nyc node_modules/mocha/bin/_mocha --require esm || echo",
+    "coverage": "nyc node_modules/mocha/bin/_mocha --recursive test/ --require esm || echo",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",

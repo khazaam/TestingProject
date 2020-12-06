@@ -30,6 +30,6 @@ addons:
       - $(git ls-files -o | tr "\n" ":")
       - $(ls /var/log/*.log | tr "\n" ":")
       - $HOME/some/other/thing.log
-      target_pahts: $TRAVIS_BUILD_NUMBER
+    target_pahts: $TRAVIS_BUILD_NUMBER
 
   

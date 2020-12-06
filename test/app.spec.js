@@ -1,15 +1,10 @@
-//This is a test file, see the other colour
+import assert from 'assert'
+import chai from 'chai';
+var expect = chai.expect;
+import add from '../src/add.js';
 
-// You can other test files to src and trought there you could 
-//add more tests. But you will nee to modify either this file 
-//or include everything into a singular file
-
-//This contain unit testing.
-const assert = require('assert');
-const { expect } = require('chai');
-//add paths here for tests
-const { add } = require('../src/app'); //Unit testing, you could add other test same way
-const { sub } = require('../src/app')
+//substraction this is our own code, we saw this in couple tutorials to have for integration tests.
+import subb from '../src/subb.js';
 
 describe('this is the add function', () => {
     it('lets add two numbers together', () => {
@@ -37,9 +32,9 @@ describe('this is the add function', () => {
 
 //sub
 
-describe('this is the sub function', () => {
+describe('this is the subb function', () => {
     it('lets sub two numbers together', () => {
-        const result = sub(5,2);
+        const result = subb(5,2);
         //now you can add all kinds of things what you want to do
         //assert.strictEqual(result, 4);//if equal
         expect(result).to.equal;
@@ -47,16 +42,16 @@ describe('this is the sub function', () => {
         //assert.ifError("There were an error");
     });
     it('One number hadling', () => {
-        const result = sub(2);
+        const result = subb(2);
         expect(result).to.be.equal(2);
 
     });
     it('Handling zero'), () => {
-        const result = sub();
+        const result = subb();
         expect(result).to.be.equal(0);
     }
     it('Returns 0 if either argument is not a number, if it is string'), () => {
-     const result = sub(2, 'testing');
+     const result = subb(2, 'testing');
      expect(result).to.be.equal(0);
     }
 });

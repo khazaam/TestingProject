@@ -1,8 +1,7 @@
-const assert = require('assert');
-const { expect } = require('chai');
-//add paths here for tests
-
-const { add } = require('../src/add');///rikki
+import assert from 'assert'
+import chai from 'chai';
+var expect = chai.expect;
+import add from '../src/add.js';
 
 
 describe('this is the add function', () => {

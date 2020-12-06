@@ -1,4 +1,5 @@
 [![Coverage Status](https://coveralls.io/repos/github/khazaam/TestingProject/badge.svg?branch=master)](https://coveralls.io/github/khazaam/TestingProject?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/khazaam/TestingProject/badge.svg?branch=master)](https://coveralls.io/github/khazaam/TestingProject?branch=master)
 
 This is just a readme file.
 

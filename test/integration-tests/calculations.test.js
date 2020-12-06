@@ -1,9 +1,7 @@
 import chai from 'chai';
 var expect = chai.expect;
 
-// Add paths here for tests
 import add from '../../src/add.js';
-import countBy from'../../src/countBy.js';
 import divide from '../../src/divide.js';
 
 describe('Tests library used with different calculations', () => {

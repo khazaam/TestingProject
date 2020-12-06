@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "[![Coverage Status](https://coveralls.io/repos/github/khazaam/TestingProject/badge.svg?branch=master)](https://coveralls.io/github/khazaam/TestingProject?branch=master)",
   "main": "index.js",
-  "scripts": {
+  "type":"module",
+   "scripts": {
     "test": "mocha test --exit",
-    "start": "node ./src/app.js",
+    "start": "node ./src/*",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",

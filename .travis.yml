@@ -1,15 +1,15 @@
-sudo: true
-
 language: node_js
 
 node_js:
- - "node"
+ - 14
 
 install:
-  - npm install --no-save nyc coveralls
+  - npm install nyc
+  - npm install coveralls
+  - npm install esm
 
 script:
-  - nyc npm test
+  - npm run coverage
 
 after_script:
-  - nyc report --reporter=text-lcov | coveralls
+  - npm run coveralls

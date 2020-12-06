@@ -63,6 +63,12 @@ describe('is object', () => {
         const result = isObject({});
         expect(result).to.match;
 
+    });
+    it('More objects, values or something', () => {
+
+        const result = isObject(["TestiOlento"]);
+        expect(result).to.match;
+
     })
 
 })

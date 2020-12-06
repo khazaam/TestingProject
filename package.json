@@ -2,7 +2,6 @@
   "name": "testingproject",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "mocha test --recursive test/ --timeout 10000",
     "coverage": "nyc node_modules/mocha/bin/_mocha --recursive test/ --require esm || echo",

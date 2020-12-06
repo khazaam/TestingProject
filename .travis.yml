@@ -1,12 +1,15 @@
-sudo: false
-
 language: node_js
 
 node_js:
- - node
+ - 14
 
 install:
-  - npm ci
+  - npm install nyc
+  - npm install coveralls
+  - npm install esm
 
 script:
+  - npm run coverage
+
+after_script:
   - npm run coveralls

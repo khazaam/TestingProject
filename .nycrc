@@ -1,0 +1,12 @@
+{
+  "reporter"   : ["text", "text-summary", "lcov", "html"],
+  "include"    : [
+  	"src/**.js"
+  ],
+  "exclude"    : [
+  	"src/.internal/**.js"
+  ],
+  "sourceMap"  : false,
+  "instrument" : false,
+  "check-coverage": true
+}

@@ -20,6 +20,16 @@ deploy:
   secret_access_key: $AWS_SECRET
   bucket: 'villeoonatestiraportti'
   skip_cleanup: true
-  acl: public_read
-  local_dir: test
+
+addons:
+  artifacts:
+    s3_region: eu-central-1
+    debug: true
+    paths:
+      - ./tests/_output
+      - $(git ls-files -o | tr "\n" ":")
+    - $(ls /var/log/*.log | tr "\n" ":")
+    - $HOME/some/other/thing.log
+      target_pahts: $TRAVIS_BUILD_NUMBER
+      working
   

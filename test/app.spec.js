@@ -5,6 +5,7 @@ import add from '../src/add.js';
 
 //substraction this is our own code, we saw this in couple tutorials to have for integration tests.
 import subb from '../src/subb.js';
+import isObject from '../src/isObject.js';
 
 describe('this is the add function', () => {
     it('lets add two numbers together', () => {
@@ -55,3 +56,19 @@ describe('this is the subb function', () => {
      expect(result).to.be.equal(0);
     }
 });
+
+describe('is object', () => {
+    it('Lets see if this is a object', () => {
+
+        const result = isObject({});
+        expect(result).to.match;
+
+    });
+    it('More objects, values or something', () => {
+
+        const result = isObject(["TestiOlento"]);
+        expect(result).to.match;
+
+    })
+
+})

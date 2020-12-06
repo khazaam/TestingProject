@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test --recursive --timeout 10000",
+    "test": "mocha test --recursive test/ --timeout 10000",
     "coverage": "nyc node_modules/mocha/bin/_mocha --require esm || echo",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },

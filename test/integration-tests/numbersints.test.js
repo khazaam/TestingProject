@@ -11,7 +11,7 @@ it('Numbers is 7',() => {
 })
 it('Numbers is 7',() => {
     const result = toInteger('6.6')
-    expect(result).to.equal(6.6)
+    expect(result).to.equal(6)
 })
 
 })

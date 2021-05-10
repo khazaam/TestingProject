@@ -6,5 +6,4 @@ It contains library and testing pipeline for it.
 Test folder contains unit tests and integration tests.
 
 
-S3
-http://villeoonatestiraportti.s3-website.eu-central-1.amazonaws.com/
+S3 was also used.
